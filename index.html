@@ -75,6 +75,7 @@
     function calculate() {
       let expression = document.getElementById("display").innerHTML;
       let result = eval(expression);
+      result = Number(result.toFixed(5))
       document.getElementById("display").innerHTML = result;
     }
   </script>
